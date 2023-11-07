@@ -7,7 +7,7 @@ export const SettingsModal = () => {
     <>
       <div className={style.modal}>
         <div className={style.modal_content}>
-          <NavLink to="/" />
+          <NavLink to="/dashboard" />
           <SettingsContent />
         </div>
       </div>

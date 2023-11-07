@@ -11,7 +11,7 @@ export const NavBar = () => {
           className={({ isActive }) =>
             isActive ? style.activeLink : style.inactiveLink
           }
-          to="/"
+          to="/overview"
         >
           OVERSIGT
         </NavLink>
