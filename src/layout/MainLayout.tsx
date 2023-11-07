@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export const MainLayout = () => {
   const isDesktop = useMediaQuery("only screen and (min-width : 1202px)");
-
+  const isMediumDevice = useMediaQuery("only screen and (max-width : 1201px)");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const MainLayout = () => {
     <>
       <Header />
       <Outlet />
-      <Footer />
+      {isMediumDevice ? <Footer /> : null}
     </>
   );
 };
