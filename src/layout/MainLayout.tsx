@@ -1,5 +1,4 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { useEffect } from "react";
@@ -19,7 +18,6 @@ export const MainLayout = () => {
 
   return (
     <>
-      <Header />
       <Outlet />
       {isMediumDevice ? <Footer /> : null}
     </>
