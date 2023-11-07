@@ -32,8 +32,24 @@ export default function SettingsProvider({ children }: SettingsProviderProps) {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   useEffect(() => {
-    setAlarm(JSON.parse(localStorage.getItem("alarm")!));
-    setTax(JSON.parse(localStorage.getItem("tax")!));
+    if (!localStorage.getItem("tax")) {
+      localStorage.setItem("tax", "false");
+    }
+    if (!localStorage.getItem("alarm")) {
+      localStorage.setItem("alarm", "false");
+    }
+    if (!localStorage.getItem("region")) {
+      localStorage.setItem("region", "DK1");
+    }
+    if (localStorage.getItem("tax")) {
+      setTax(JSON.parse(localStorage.getItem("tax")!));
+    }
+    if (localStorage.getItem("alarm")) {
+      setAlarm(JSON.parse(localStorage.getItem("alarm")!));
+    }
+    if (localStorage.getItem("region")) {
+      setRegion(localStorage.getItem("region")!);
+    }
   }, []);
 
   return (
