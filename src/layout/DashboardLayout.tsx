@@ -1,7 +1,6 @@
-import style from "../styles/desktoplayout.module.scss";
+import style from "../styles/dashboardlayout.module.scss";
 import { useState } from "react";
 import { SettingsModal } from "../components/SettingsModal";
-import { Header } from "../components/Header";
 import { NowLayout } from "./NowLayout";
 import { OverviewLayout } from "./OverviewLayout";
 import { HistoryLayout } from "./HistoryLayout";
@@ -14,9 +13,7 @@ export const DashboardLayout = () => {
 
   return (
     <>
-      {/*       <Header openModal={openModal} setOpenModal={setOpenModal} />
-       */}{" "}
-      <section className={style.desktoplayout}>
+      <section className={style.dashboardlayout}>
         {openModal ? <SettingsModal setOpenModal={setOpenModal} /> : null}
         {isMediumDevice ? <SettingsButton /> : null}
 

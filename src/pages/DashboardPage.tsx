@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { Header } from "../components/Header";
 import { SettingsModal } from "../components/SettingsModal";
-import { DashboardLayout } from "../layout/DashboardLayout";
 import { HistoryLayout } from "../layout/HistoryLayout";
 import { NowLayout } from "../layout/NowLayout";
 import { OverviewLayout } from "../layout/OverviewLayout";
-import style from "../styles/desktoplayout.module.scss";
+import style from "../styles/dashboardlayout.module.scss";
 
 export const DashboardPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -13,7 +12,7 @@ export const DashboardPage = () => {
   return (
     <>
       <Header openModal={openModal} setOpenModal={setOpenModal} />
-      <section className={style.desktoplayout}>
+      <section className={style.dashboardlayout}>
         <NowLayout />
         <OverviewLayout />
         <HistoryLayout />
