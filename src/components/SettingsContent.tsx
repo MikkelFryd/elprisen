@@ -16,6 +16,7 @@ export const SettingsContent = () => {
 
   function handleSelect(value: string) {
     setRegion(value);
+    localStorage.setItem("region", value);
   }
 
   const handleTaxBtn = (e: boolean) => {
