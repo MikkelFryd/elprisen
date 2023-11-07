@@ -21,7 +21,7 @@ function App() {
             <Router>
               <Header />
               <Routes>
-                <Route index path="/overview" element={<Overview />} />
+                <Route index path="/" element={<Overview />} />
                 <Route path="/now" element={<Now />} />
                 <Route path="/history" element={<History />} />
                 <Route path="/settings" element={<Settings />} />
