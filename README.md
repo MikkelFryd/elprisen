@@ -1,4 +1,4 @@
-# elprisenapp
+# elprisen
 
 features:
 
