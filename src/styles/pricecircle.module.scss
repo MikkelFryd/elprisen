@@ -1,0 +1,26 @@
+@import "./_variables.module.scss";
+
+.pricecircle {
+  border-radius: 50%;
+  border-style: dashed;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-color: $color-green;
+  background-color: $color-black;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+  .textcontainer {
+    p {
+      color: $color-white;
+      margin: 0;
+      font-family: $font-primary;
+    }
+    p:nth-child(2) {
+      font-size: 0.7rem;
+      margin: 0;
+    }
+  }
+}

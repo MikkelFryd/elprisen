@@ -1,0 +1,29 @@
+@import "./_variables.module.scss";
+
+.settingsbutton {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  a {
+    background-image: url("../assets/gear-solid.svg");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    cursor: pointer;
+    margin: 1rem;
+  }
+}
+
+.settingslink {
+  display: flex;
+  justify-content: end;
+  background-color: $color-grey;
+  a {
+    background-image: url("../assets/gear-solid.svg");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    cursor: pointer;
+    margin: 1rem;
+  }
+}

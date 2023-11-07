@@ -1,0 +1,56 @@
+@import "./_variables.module.scss";
+
+.circlewrapper {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  .firstcircle {
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    border-color: $color-green;
+    background-color: $color-black;
+    box-shadow: 0px 0px 2px 4px rgba(60, 60, 60, 60.75);
+    display: flex;
+    .secondcircle {
+      border-radius: 50%;
+      border: 2px solid $color-green;
+      border-style: dashed;
+      width: 230px;
+      height: 230px;
+      border-color: $color-green;
+      margin: auto;
+      display: flex;
+      .thirdcircle {
+        border-radius: 50%;
+        text-align: center;
+        display: grid;
+        place-content: center;
+        border-style: dashed;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border-color: $color-green;
+        h3 {
+          margin: 0;
+          font-size: 2rem;
+          color: $color-green;
+          font-family: $font-primary;
+        }
+        h5 {
+          margin: 0;
+          color: $color-green;
+          font-size: 1rem;
+          font-family: $font-primary;
+        }
+      }
+    }
+  }
+  p {
+    color: $color-green;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./_variables.module.scss";
+
+.overview {
+  background-color: $color-grey;
+  display: grid;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  h2 {
+    color: $color-white;
+    text-align: center;
+    font-family: $font-primary;
+    font-weight: 300;
+  }
+  .textwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: 10vh;
+    h5 {
+      color: $color-white;
+      font-family: $font-primary;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "./_variables.module.scss";
+
+.settingscontent {
+  background-color: $color-grey;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  h2 {
+    margin: auto;
+    color: $color-white;
+    font-family: $font-primary;
+    font-weight: 300;
+  }
+  div {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    p {
+      color: $color-white;
+      font-family: $font-primary;
+    }
+  }
+  .selectoptions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2.5rem;
+    select {
+      background-color: $color-black;
+      color: $color-white;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border: none;
+      padding: 0.5rem;
+      width: 100%;
+      option {
+        color: $color-white;
+        border: none;
+      }
+    }
+  }
+}

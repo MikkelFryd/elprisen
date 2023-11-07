@@ -1,0 +1,27 @@
+@import "./_variables.module.scss";
+
+.header {
+  background-color: #201e1e;
+  padding: 0.1rem;
+}
+
+.headerdesktop {
+  display: grid;
+  grid-template-columns: 5% 5% 80% 5%;
+  background-color: $color-black;
+  align-items: center;
+  text-align: left;
+  img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  h4 {
+    font-family: $font-primary;
+    color: $color-green;
+    font-weight: 300;
+  }
+  div {
+    width: 100%;
+  }
+}

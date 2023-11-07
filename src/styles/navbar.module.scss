@@ -1,0 +1,27 @@
+@import "./_variables.module.scss";
+
+.navbar {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  padding: 0.3rem;
+  img {
+    height: 5vh;
+  }
+  .linkwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 0.9rem;
+      font-family: $font-primary;
+    }
+    .activeLink {
+      color: $color-green;
+    }
+    .inactiveLink {
+      color: $color-white;
+    }
+  }
+}
