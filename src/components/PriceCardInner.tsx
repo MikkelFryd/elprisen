@@ -14,8 +14,8 @@ export const PriceCardInner = ({ item, color }: ColoredPTagProps) => {
 
   return (
     <>
-      <p style={{ color: color }}>{handleTax(item.DKK_per_kWh, tax)}</p>
       <p>{handleTime(item.time_start)}</p>
+      <p style={{ color: color }}>{handleTax(item.DKK_per_kWh, tax)} kr</p>
     </>
   );
 };

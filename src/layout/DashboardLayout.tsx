@@ -3,7 +3,7 @@ import { Overview } from "../pages/Overview";
 import { History } from "../pages/History";
 import style from "../styles/desktoplayout.module.scss";
 
-export const DesktopLayout = () => {
+export const DashboardLayout = () => {
   return (
     <section className={style.desktoplayout}>
       <Now />
