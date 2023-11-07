@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Overview } from "./pages/Overview";
-import { Now } from "./pages/Now";
-import { History } from "./pages/History";
-import { Settings } from "./pages/Settings";
+import { OverviewPage } from "./pages/OverviewPage";
+import { NowPage } from "./pages/NowPage";
+import { HistoryPage } from "./pages/HistoryPage";
+import { SettingsPage } from "./pages/SettingsPage";
 import SettingsProvider from "./context/SettingsContext";
-import { DashboardLayout } from "./layout/DashboardLayout";
+import { DashboardPage } from "./pages/DashboardPage";
 import { MainLayout } from "./layout/MainLayout";
 
 function App() {
@@ -14,11 +14,11 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<MainLayout />}>
-              <Route path="/overview" element={<Overview />} />
-              <Route path="/dashboard" element={<DashboardLayout />} />
-              <Route path="/now" element={<Now />} />
-              <Route path="/history" element={<History />} />
-              <Route path="/settings" element={<Settings />} />
+              <Route path="/overview" element={<OverviewPage />} />
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/now" element={<NowPage />} />
+              <Route path="/history" element={<HistoryPage />} />
+              <Route path="/settings" element={<SettingsPage />} />
             </Route>
           </Routes>
         </Router>

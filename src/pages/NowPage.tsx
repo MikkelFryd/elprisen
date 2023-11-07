@@ -4,7 +4,7 @@ import { SettingsButton } from "../components/SettingsButton";
 import style from "../styles/now.module.scss";
 import { Header } from "../components/Header";
 
-export const Now = () => {
+export const NowPage = () => {
   const isMediumDevice = useMediaQuery("only screen and (max-width : 1201px)");
   return (
     <>
