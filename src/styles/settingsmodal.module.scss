@@ -18,13 +18,14 @@
     display: grid;
     border-radius: 8px;
     border: none;
-    a {
+    .closebtn {
       background-image: url("../assets/circle-xmark-solid.svg");
       background-size: cover;
       color: $color-green;
       width: 40px;
       height: 40px;
       justify-self: end;
+      cursor: pointer;
     }
 
     h2 {

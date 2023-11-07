@@ -5,6 +5,17 @@ export interface PriceDataProps {
     data: Array<PriceDataInner>;
 }
 
+export interface ModalProps {
+    openModal?: boolean;
+    setOpenModal?: Dispatch<SetStateAction<boolean>>;
+  }
+
+// export interface SettingsButtonProps {
+//     openModal: boolean;
+//     setOpenModal: Dispatch<SetStateAction<boolean>>;
+//   }
+  
+  
 export interface PriceDataInner {
     DKK_per_kWh: number;
     EUR_per_kWh: number;

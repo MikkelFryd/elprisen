@@ -7,7 +7,7 @@
 
 .headerdesktop {
   display: grid;
-  grid-template-columns: 5% 5% 80% 5%;
+  grid-template-columns: 5% 90% 5%;
   background-color: $color-black;
   align-items: center;
   text-align: left;
@@ -21,7 +21,12 @@
     color: $color-green;
     font-weight: 300;
   }
-  div {
-    width: 100%;
+  span {
+    background-image: url("../assets/gear-solid.svg");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
   }
 }
