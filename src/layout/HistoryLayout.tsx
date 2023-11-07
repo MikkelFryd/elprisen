@@ -29,9 +29,9 @@ export const HistoryLayout = () => {
 
   if (error)
     return (
-      <>
-        <h2>HISTORIK</h2>
+      <section className={style.historycontainer}>
         <div className={style.historywrapper}>
+          <h2>HISTORIK</h2>
           <input
             type="date"
             name=""
@@ -41,14 +41,14 @@ export const HistoryLayout = () => {
           <h5>ELPRISERNE D. {reversedDate}</h5>
           <b>Der fandtes desværre ikke nogen el pris for denne dato</b>
         </div>
-      </>
+      </section>
     );
 
   if (data)
     return (
-      <>
-        <h2>HISTORIK</h2>
+      <section className={style.historycontainer}>
         <div className={style.historywrapper}>
+          <h2>HISTORIK</h2>
           <input type="date" onChange={(e) => handleDate(e.target.value)} />
           <h5>ELPRISERNE D. {reversedDate}</h5>
           {data.length > 1 ? (
@@ -59,6 +59,6 @@ export const HistoryLayout = () => {
             <p>Prøv en anden dato.</p>
           )}
         </div>
-      </>
+      </section>
     );
 };

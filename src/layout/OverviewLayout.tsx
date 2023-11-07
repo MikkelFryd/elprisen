@@ -29,15 +29,12 @@ export const OverviewLayout = () => {
   if (error) return <p>Kunne ikke hente oplysninger.</p>;
 
   return (
-    <>
-      {isMediumDevice ? <SettingsButton /> : null}
-      <section className={style.overview}>
-        <h2>OVERSIGT</h2>
-        {isMediumDevice && data!.length ? (
-          <PriceCircleWrapper data={data!} />
-        ) : null}
-        {data ? <PriceCard data={data!} /> : null}
-      </section>
-    </>
+    <section className={style.overview}>
+      <h2>OVERSIGT</h2>
+      {isMediumDevice && data!.length ? (
+        <PriceCircleWrapper data={data!} />
+      ) : null}
+      {data ? <PriceCard data={data!} /> : null}
+    </section>
   );
 };

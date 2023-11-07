@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react";
+import styledesktop from "../styles/now.module.scss";
 import style from "../styles/nowlayout.module.scss";
 import { SettingsContext } from "../context/SettingsContext";
 import { useMediaQuery } from "@uidotdev/usehooks";
@@ -39,7 +40,8 @@ export const NowLayout = () => {
   if (error) return <p>Kunne ikke hente oplysninger.</p>;
 
   return (
-    <>
+    <section className={styledesktop.nowdesktop}>
+      <h2>Lige nu</h2>
       <div className={style.circlewrapper}>
         <div className={style.firstcircle}>
           <div className={style.secondcircle}>
@@ -53,12 +55,12 @@ export const NowLayout = () => {
           {hour}.00 - {hour + 1}.00
         </p>
       </div>
-      {isDesktop && data!.length ? (
+      {isDesktop && data ? (
         <>
           <PriceCircleWrapper data={data!} />
           <Footer />
         </>
       ) : null}
-    </>
+    </section>
   );
 };

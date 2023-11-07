@@ -4,7 +4,7 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import { HistoryLayout } from "../layout/HistoryLayout";
 import { Header } from "../components/Header";
 
-export const History = () => {
+export const HistoryPage = () => {
   const isMediumDevice = useMediaQuery("only screen and (max-width : 1201px)");
 
   return (
