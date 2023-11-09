@@ -16,7 +16,7 @@ export const NowLayout = () => {
   const baseUrl = "https://www.elprisenligenu.dk/api/v1/prices/";
   const { year, month, day, hour } = getDate();
   const { error, isLoading, data } = useFetch(
-    `${baseUrl}${year}/${month}-${day < 9 ? "0" + day : day}_${region}.json`
+    `${baseUrl}${year}/${month}-${day <= 9 ? "0" + day : day}_${region}.json`
   );
 
   function getTodaysPrice() {

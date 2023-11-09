@@ -8,13 +8,31 @@ export interface PriceDataProps {
 export interface ModalProps {
     openModal?: boolean;
     setOpenModal?: Dispatch<SetStateAction<boolean>>;
-  }
+}
 
-// export interface SettingsButtonProps {
-//     openModal: boolean;
-//     setOpenModal: Dispatch<SetStateAction<boolean>>;
-//   }
+export interface PriceCircleInterface {
+    value: string;
+}
   
+
+export interface ColoredPTagProps {
+    item: PriceDataInner;
+    color: string;
+}
+
+export interface SettingsProviderProps {
+    children: ReactNode;
+  };
+
+export interface PriceSorted {
+    min: string;
+    max: string;
+}
+
+export interface ToggleSwitchProps {
+    handleToggle: (e: boolean) => void;
+    isChecked: boolean;
+}
   
 export interface PriceDataInner {
     DKK_per_kWh: number;

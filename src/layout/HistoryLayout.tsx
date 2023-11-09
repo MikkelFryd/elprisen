@@ -10,7 +10,7 @@ export const HistoryLayout = () => {
   const { region } = useContext(SettingsContext);
   const { year, month, day } = getDate();
   const [url, setUrl] = useState<string>(
-    `${baseUrl}${year}/${month}-${day < 9 ? "0" + day : day}_${region}.json`
+    `${baseUrl}${year}/${month}-${day <= 9 ? "0" + day : day}_${region}.json`
   );
   const [reversedDate, setReversedDate] = useState<string>();
   const { data, isLoading, error } = useFetch(url!);

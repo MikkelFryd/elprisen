@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
 import { PriceCircle } from "./PriceCircle";
 import style from "../styles/pricecirclewrapper.module.scss";
-import { PriceDataInner, PriceDataProps } from "../types/types";
+import { PriceDataInner, PriceDataProps, PriceSorted } from "../types/types";
 
-interface PriceSorted {
-  min: string;
-  max: string;
-}
 
 export const PriceCircleWrapper = (props: PriceDataProps) => {
   const [sortedData, setSortedData] = useState<PriceSorted>();

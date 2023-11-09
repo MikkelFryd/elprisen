@@ -1,10 +1,7 @@
 import { useContext } from "react";
 import style from "../styles/pricecircle.module.scss";
 import { SettingsContext } from "../context/SettingsContext";
-
-interface PriceCircleInterface {
-  value: string;
-}
+import { PriceCircleInterface } from "../types/types";
 
 export const PriceCircle = ({ value }: PriceCircleInterface) => {
   const { tax } = useContext(SettingsContext);
