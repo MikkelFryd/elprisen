@@ -1,8 +1,5 @@
-import { createContext, useState, ReactNode, useEffect } from "react";
-
-type SettingsProviderProps = {
-  children: ReactNode;
-};
+import { createContext, useState, useEffect } from "react";
+import { SettingsProviderProps } from "../types/types";
 
 const defaultState = {
   region: "DK1",

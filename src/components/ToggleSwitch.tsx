@@ -1,9 +1,5 @@
 import style from "../styles/toggleswitch.module.scss";
-
-interface ToggleSwitchProps {
-  handleToggle: (e: boolean) => void;
-  isChecked: boolean;
-}
+import { ToggleSwitchProps } from "../types/types";
 
 export const ToggleSwitch = ({
   handleToggle,
