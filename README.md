@@ -1,5 +1,7 @@
 # elprisen
 
+https://elprisenapp.netlify.app/
+
 features:
 
 1. See the electricity price for the current hour.
