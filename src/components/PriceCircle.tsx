@@ -8,7 +8,7 @@ export const PriceCircle = ({ value }: PriceCircleInterface) => {
 
   function handleTax(value: string) {
     if (tax === true) {
-      let priceInclTax = parseFloat(value) * 1.25;
+      const priceInclTax = parseFloat(value) * 1.25;
       return priceInclTax.toFixed(3);
     } else return value;
   }
