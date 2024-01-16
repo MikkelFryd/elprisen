@@ -14,7 +14,7 @@ export const PriceCard = (props: PriceDataProps) => {
 
   function getColor(value: string) {
     //value from 0 to 1
-    let hue = ((1 - parseFloat(value)) * 120).toString(10);
+    const hue = ((1 - parseFloat(value)) * 120).toString(10);
     return ["hsl(", hue, ",100%,50%)"].join("");
   }
 

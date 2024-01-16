@@ -12,14 +12,14 @@ export const OverviewLayout = () => {
   const baseUrl = "https://www.elprisenligenu.dk/api/v1/prices/";
   const { year, month, day } = getDate();
   const [url, setUrl] = useState<string>(
-    `${baseUrl}${year}/${month}-${day <= 9 ? "0" + day : day}_${region}.json`
+    `${baseUrl}${year}/${month < 9 ? "0" + month : month}-${day <= 9 ? "0" + day : day}_${region}.json`
   );
   const { error, isLoading, data } = useFetch(url);
   const isMediumDevice = useMediaQuery("only screen and (max-width : 1201px)");
 
   useEffect(() => {
     setUrl(
-      `${baseUrl}${year}/${month}-${day <= 9 ? "0" + day : day}_${region}.json`
+      `${baseUrl}${year}/${month < 9 ? "0" + month : month}-${day <= 9 ? "0" + day : day}_${region}.json`
     );
   }, [region]);
 

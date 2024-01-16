@@ -16,7 +16,7 @@ export const NowLayout = () => {
   const baseUrl = "https://www.elprisenligenu.dk/api/v1/prices/";
   const { year, month, day, hour } = getDate();
   const { error, isLoading, data } = useFetch(
-    `${baseUrl}${year}/${month}-${day <= 9 ? "0" + day : day}_${region}.json`
+    `${baseUrl}${year}/${month < 9 ? "0" + month : month}-${day <= 9 ? "0" + day : day}_${region}.json`
   );
 
   function getTodaysPrice() {
@@ -25,7 +25,7 @@ export const NowLayout = () => {
         setPriceNow(item.DKK_per_kWh.toFixed(3));
       }
       if (index === hour && tax === true) {
-        let priceInclTax = item.DKK_per_kWh * 1.25;
+        const priceInclTax = item.DKK_per_kWh * 1.25;
         setPriceNow(priceInclTax.toFixed(3));
       }
     });

@@ -22,7 +22,7 @@ export interface ColoredPTagProps {
 
 export interface SettingsProviderProps {
     children: ReactNode;
-  };
+  }
 
 export interface PriceSorted {
     min: string;
