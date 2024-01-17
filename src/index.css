@@ -1,4 +1,4 @@
-body, #root{
+body, #root, html{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,4 +6,17 @@ body, #root{
   display: flex;
   flex-direction: column;
   background-color: #27282B;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #27282B;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #615f5f;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 }
