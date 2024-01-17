@@ -1,6 +1,6 @@
 # elprisen
 
-https://elprisen-app.netlify.app
+https://elpris-app.netlify.app
 
 features:
 
